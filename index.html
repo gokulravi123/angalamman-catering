@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Angalamman Catering| Premium Function Catering</title>
+    <meta name="description"
+        content="Home-based catering services for weddings, birthdays, and family events. Pre-order exquisite menus online.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">Angalamman Catering <span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu Highlights</a></li>
+                <li><a href="#order" class="btn btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="badge">Home-made with ♥</span>
+            <h1>Angalamman Catering.</h1>
+            <p>Elevate your weddings, birthdays, and family gatherings with our bespoke home-based catering. Perfectly
+                planned portions, exceptional taste, delivered on schedule.</p>
+            <div class="hero-buttons">
+                <a href="#order" class="btn btn-primary btn-large">Plan Your Event</a>
+                <a href="#services" class="btn btn-outline btn-large">Discover More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Events We Cater To</h2>
+                <p>We specialize in functions, ensuring your guests are well-fed and happy.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-icon">💍</div>
+                    <h3>Weddings</h3>
+                    <p>Elegant, large-scale catering to make your big day stress-free and delicious.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">🎂</div>
+                    <h3>Birthdays</h3>
+                    <p>Fun and customized menus perfectly suited for all age groups and party themes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Events</h3>
+                    <p>Reunions, anniversaries, and get-togethers made special with homestyle cooking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section section-padding">
+        <div class="container">
+            <div class="order-container">
+                <div class="order-info">
+                    <h2>Book Your Catering Event</h2>
+                    <p>Avoid the hassle of phone miscommunications. Plan your menu and event details right here, and
+                        we'll handle the rest.</p>
+                    <ul class="info-list">
+                        <li><span>✔</span> Select your exact menu items</li>
+                        <li><span>✔</span> Precise quantity management</li>
+                        <li><span>✔</span> No hidden surprises</li>
+                        <li><span>✔</span> Scheduled deliveries</li>
+                    </ul>
+                </div>
+                <div class="order-form-wrapper glass-panel">
+                    <form id="catering-form">
+                        <!-- Step 1: Event Details -->
+                        <div class="form-section">
+                            <h3>1. Event Details</h3>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" required placeholder="John Doe">
+                                </div>
+                                <div class="input-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" required placeholder="+1 234 567 8900">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="eventType">Event Type</label>
+                                    <select id="eventType" required>
+                                        <option value="" disabled selected>Select Event Type</option>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="birthday">Birthday</option>
+                                        <option value="family">Family Gathering</option>
+                                        <option value="other">Other Function</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="guestCount">Number of Guests</label>
+                                    <input type="number" id="guestCount" required min="10" placeholder="Min 10">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="eventDate">Event Date</label>
+                                    <input type="date" id="eventDate" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="eventTime">Delivery Time</label>
+                                    <input type="time" id="eventTime" required>
+                                </div>
+                            </div>
+                            <div class="form-row full-width">
+                                <div class="input-group">
+                                    <label for="address">Event/Delivery Address</label>
+                                    <textarea id="address" rows="2" required
+                                        placeholder="123 Celebration Lane..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Menu Selection -->
+                        <div class="form-section">
+                            <h3>2. Build Your Menu</h3>
+                            <p class="section-subtitle">Select items and specify quantities.</p>
+
+                            <div class="menu-categories" id="menu-container">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Order Summary -->
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Estimated Total:</span>
+                                <span id="total-price" class="price">₹0.00</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit Booking Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">Festiva<span>.</span></div>
+                <p>Bringing warmth and joy to your events through authentic, home-cooked culinary experiences.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: hello@festiva.com</p>
+                <p>Phone: +1 800 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Festiva Home Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Thank you for choosing Festiva. We have received your function details and will contact you shortly to
+                confirm the menu and logistics.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
