@@ -69,6 +69,99 @@
         </div>
     </section>
 
+    <!-- Menu Highlights Section -->
+    <section id="menu" class="menu-highlights section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Highlights</h2>
+                <p>A glimpse into our diverse and authentic culinary offerings.</p>
+            </div>
+            
+            <div class="highlight-tabs">
+                <button class="tab-btn active" onclick="filterMenu('veg')">Vegetarian Excellence</button>
+                <button class="tab-btn" onclick="filterMenu('nonveg')">Non-Veg Specialties</button>
+            </div>
+
+            <div class="highlights-container">
+                <!-- Veg Highlights -->
+                <div id="veg-highlights" class="highlights-grid active">
+                    <div class="highlight-card">
+                        <div class="highlight-img-wrapper">
+                            <img src="catering_menu_highlight_1778293336733.png" alt="Veg Starters">
+                            <div class="highlight-overlay">Variety of Fries & Vadai</div>
+                        </div>
+                        <div class="highlight-info">
+                            <h3>Starters & Fries</h3>
+                            <ul>
+                                <li>Potato, Yam & Raw Banana Fries</li>
+                                <li>Parupu & Medhu Vada</li>
+                                <li>Assorted Bajjis & Pakkoda</li>
+                                <li>Mushroom & Cauliflower Chilli</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-info">
+                            <h3>Main Course Bliss</h3>
+                            <ul>
+                                <li>Aromatic Veg & Mushroom Biriyani</li>
+                                <li>Drumstick & Brinjal Sambar</li>
+                                <li>Tangy Puli Kolambu Varieties</li>
+                                <li>Traditional Mor Kolambu</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-info">
+                            <h3>Sweet Endings & Sides</h3>
+                            <ul>
+                                <li>Parupu & Semmiya Payasam</li>
+                                <li>Jawarusi Payasam</li>
+                                <li>Crunchy Applam & Vadagam</li>
+                                <li>Home-made Curd & Rasam</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non-Veg Highlights -->
+                <div id="nonveg-highlights" class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-info">
+                            <h3>Meat Lovers' Paradise</h3>
+                            <ul>
+                                <li>Chicken Pallipalayam & Chettinad</li>
+                                <li>Chicken Sindhamani & Pichupotta</li>
+                                <li>Mutton Chukka & Varuval</li>
+                                <li>Authentic Kosai Kari</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-info">
+                            <h3>Seafood & More</h3>
+                            <ul>
+                                <li>Fresh Fish Fry & Curry</li>
+                                <li>Rathha Poriyal & Boaty Fry</li>
+                                <li>Spiced Egg Roast</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-info">
+                            <h3>Signature Biriyani</h3>
+                            <ul>
+                                <li>Authentic Chicken Biriyani</li>
+                                <li>Slow-cooked Mutton Biriyani</li>
+                                <li>Traditional Home-style Spices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Order Section -->
     <section id="order" class="order-section section-padding">
         <div class="container">
@@ -162,17 +255,18 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-col">
-                <div class="logo">Festiva<span>.</span></div>
-                <p>Bringing warmth and joy to your events through authentic, home-cooked culinary experiences.</p>
+                <div class="logo">Angalamman Catering<span>.</span></div>
+                <p>Bringing warmth and joy to your events through authentic, home-cooked culinary experiences. Family traditions served with love.</p>
             </div>
             <div class="footer-col">
-                <h4>Contact</h4>
-                <p>Email: hello@festiva.com</p>
-                <p>Phone: +1 800 123 4567</p>
+                <h4>Contact Us</h4>
+                <p>Email: contact@angalammancatering.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Tamil Nadu, India</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Festiva Home Catering. All rights reserved.</p>
+            <p>&copy; 2026 Angalamman Catering. All rights reserved. | <a href="admin.html" class="admin-link">Dashboard Access</a></p>
         </div>
     </footer>
 
@@ -181,7 +275,7 @@
         <div class="modal-content">
             <div class="modal-icon">🎉</div>
             <h2>Order Placed Successfully!</h2>
-            <p>Thank you for choosing Festiva. We have received your function details and will contact you shortly to
+            <p>Thank you for choosing Angalamman Catering. We have received your function details and will contact you shortly to
                 confirm the menu and logistics.</p>
             <button class="btn btn-primary" onclick="closeModal()">Close</button>
         </div>
